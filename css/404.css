@@ -1,0 +1,366 @@
+/*==================================
+404 PAGE
+==================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#07131f,#0b2340,#07131f);
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    position:relative;
+
+}
+
+/*==================================
+BACKGROUND GLOW
+==================================*/
+
+body::before{
+
+    content:"";
+    position:absolute;
+    width:420px;
+    height:420px;
+    background:#19d1ff;
+    border-radius:50%;
+    top:-180px;
+    left:-180px;
+    opacity:.08;
+    filter:blur(140px);
+
+}
+
+body::after{
+
+    content:"";
+    position:absolute;
+    width:420px;
+    height:420px;
+    background:#4a7cff;
+    border-radius:50%;
+    right:-180px;
+    bottom:-180px;
+    opacity:.08;
+    filter:blur(140px);
+
+}
+
+/*==================================
+CARD
+==================================*/
+
+.error-card{
+
+    position:relative;
+    width:100%;
+    max-width:520px;
+    margin:20px;
+    padding:55px 45px;
+    text-align:center;
+
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(25px);
+
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:35px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.35);
+
+    z-index:2;
+
+}
+
+/*==================================
+ICON
+==================================*/
+
+.error-icon{
+
+    width:110px;
+    height:110px;
+
+    margin:0 auto 25px;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:rgba(25,209,255,.08);
+
+    border:1px solid rgba(25,209,255,.35);
+
+    color:#19d1ff;
+    font-size:42px;
+
+    animation:float 3s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+}
+
+/*==================================
+TEXT
+==================================*/
+
+.error-tag{
+
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:40px;
+
+    background:rgba(25,209,255,.1);
+
+    color:#19d1ff;
+
+    font-size:14px;
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+.error-code{
+
+    font-size:110px;
+    line-height:1;
+    font-weight:800;
+
+    margin-bottom:15px;
+
+    background:linear-gradient(135deg,#4a7cff,#19d1ff);
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+    text-shadow:0 0 35px rgba(25,209,255,.35);
+
+}
+
+.error-card h2{
+
+    color:#fff;
+    font-size:38px;
+    margin-bottom:20px;
+
+}
+
+.error-card p{
+
+    color:#b8cad9;
+    line-height:1.9;
+    font-size:17px;
+    margin-bottom:40px;
+
+}
+
+/*==================================
+FEATURES
+==================================*/
+
+.error-features{
+
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    margin-bottom:40px;
+    flex-wrap:wrap;
+
+}
+
+.feature{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:12px;
+
+}
+
+.feature i{
+
+    color:#19d1ff;
+    font-size:28px;
+
+}
+
+.feature span{
+
+    color:#fff;
+    font-weight:500;
+
+}
+
+/*==================================
+BUTTONS
+==================================*/
+
+.error-buttons{
+
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    flex-wrap:wrap;
+
+}
+
+.error-buttons a,
+.error-buttons button{
+
+    border:none;
+    cursor:pointer;
+    text-decoration:none;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    padding:16px 34px;
+
+    border-radius:15px;
+
+    font-size:15px;
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.home-btn{
+
+    color:#fff;
+
+    background:linear-gradient(
+        135deg,
+        #4a7cff,
+        #19d1ff);
+
+    box-shadow:0 15px 35px rgba(25,209,255,.25);
+
+}
+
+.back-btn{
+
+    color:#fff;
+
+    background:rgba(255,255,255,.07);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.error-buttons a:hover,
+.error-buttons button:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/*==================================
+MOBILE
+==================================*/
+
+@media(max-width:768px){
+
+    .error-card{
+
+        padding:40px 25px;
+
+    }
+
+    .error-code{
+
+        font-size:85px;
+
+    }
+
+    .error-card h2{
+
+        font-size:30px;
+
+    }
+
+    .error-card p{
+
+        font-size:15px;
+
+    }
+
+    .error-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .error-buttons a,
+    .error-buttons button{
+
+        width:100%;
+
+    }
+
+    .error-features{
+
+        gap:25px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .error-card{
+
+        padding:35px 20px;
+
+        border-radius:25px;
+
+    }
+
+    .error-icon{
+
+        width:85px;
+        height:85px;
+        font-size:34px;
+
+    }
+
+    .error-code{
+
+        font-size:72px;
+
+    }
+
+    .error-card h2{
+
+        font-size:24px;
+
+    }
+
+    .feature i{
+
+        font-size:24px;
+
+    }
+
+}

@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | Stackly Real Estate</title>
+
+    <link rel="stylesheet"
+        href="css/dashboard.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!--==============================
+    MOBILE OVERLAY
+    ===============================-->
+
+    <div class="sidebar-overlay"></div>
+
+    <!--==============================
+    SIDEBAR
+    ===============================-->
+
+    <aside class="dashboard-sidebar">
+
+        <!-- Logo -->
+
+        <div class="sidebar-logo">
+
+            <a href="index.html">
+
+                <img src="images/stackly-logo5.webp"
+                    alt="Stackly">
+
+            </a>
+
+            <button class="close-sidebar">
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+        <!-- Profile -->
+
+        <div class="sidebar-profile">
+
+            <div class="profile-image">
+
+                BA
+
+            </div>
+
+            <h3>
+
+                Balaraju
+
+            </h3>
+
+            <span>
+
+                yarapatinibalaraju143@gmail.com
+
+            </span>
+
+        </div>
+
+        <!-- Company -->
+
+        <div class="company-name">
+
+            <h4>
+
+                Stackly Real Estate
+
+            </h4>
+
+            <p>
+
+                Premium Property Management
+
+            </p>
+
+        </div>
+
+        <!-- Menu -->
+
+        <ul class="sidebar-menu">
+
+            <li>
+
+                <a href="admin-dashboard.html"
+                    class="active">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    Dashboard
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="404.html">
+
+                    <i class="fa-solid fa-building"></i>
+
+                    Properties
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="404.html">
+
+                    <i class="fa-solid fa-users"></i>
+
+                    Clients
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="404.html">
+
+                    <i class="fa-solid fa-user-tie"></i>
+
+                    Agents
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="404.html">
+
+                    <i class="fa-solid fa-calendar-days"></i>
+
+                    Bookings
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="404.html">
+
+                    <i class="fa-solid fa-wallet"></i>
+
+                    Revenue
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="404.html">
+
+                    <i class="fa-solid fa-gear"></i>
+
+                    Settings
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="login.html">
+
+                    <i class="fa-solid fa-right-from-bracket"></i>
+
+                    Logout
+
+                </a>
+
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!--==============================
+    MAIN CONTENT
+    ===============================-->
+
+    <main class="dashboard-content">
+
+        <!--==========================
+        TOP BAR
+        ==========================-->
+
+        <header class="dashboard-header">
+
+            <button class="menu-toggle">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+            <div>
+
+                <h1>
+
+                    Real Estate Dashboard
+
+                </h1>
+
+                <p>
+
+                    Welcome back,
+                    <strong>Balaraju</strong>
+
+                </p>
+
+            </div>
+
+            <div class="header-right">
+
+                <button>
+
+                    <i class="fa-regular fa-bell"></i>
+
+                </button>
+
+                <button>
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </button>
+
+            </div>
+
+        </header>
+
+        <!--==========================
+        STATS
+        ==========================-->
+
+        <section class="dashboard-cards">
+
+            <!-- Card -->
+
+            <div class="dashboard-card">
+
+                <div class="card-icon">
+
+                    <i class="fa-solid fa-building"></i>
+
+                </div>
+
+                <span>
+
+                    Total Properties
+
+                </span>
+
+                <h2 class="counter"
+                    data-target="248">
+
+                    0
+
+                </h2>
+
+                <small>
+
+                    +12 this month
+
+                </small>
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="dashboard-card">
+
+                <div class="card-icon">
+
+                    <i class="fa-solid fa-users"></i>
+
+                </div>
+
+                <span>
+
+                    Active Clients
+
+                </span>
+
+                <h2 class="counter"
+                    data-target="146">
+
+                    0
+
+                </h2>
+
+                <small>
+
+                    +8 this week
+
+                </small>
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="dashboard-card">
+
+                <div class="card-icon">
+
+                    <i class="fa-solid fa-sack-dollar"></i>
+
+                </div>
+
+                <span>
+
+                    Monthly Revenue
+
+                </span>
+
+                <h2>
+
+                    ₹<span class="counter"
+                        data-target="92">
+
+                        0
+
+                    </span>L
+
+                </h2>
+
+                <small>
+
+                    +18% Growth
+
+                </small>
+
+            </div>
+
+            <!-- Card -->
+
+            <div class="dashboard-card">
+
+                <div class="card-icon">
+
+                    <i class="fa-solid fa-house-circle-check"></i>
+
+                </div>
+
+                <span>
+
+                    Properties Sold
+
+                </span>
+
+                <h2 class="counter"
+                    data-target="78">
+
+                    0
+
+                </h2>
+
+                <small>
+
+                    This Year
+
+                </small>
+
+            </div>
+
+        </section>
+                <!--==================================
+        DASHBOARD BODY
+        ===================================-->
+
+        <section class="dashboard-grid">
+
+            <!--==============================
+            SALES OVERVIEW
+            ===============================-->
+
+            <div class="dashboard-box chart-box">
+
+                <div class="box-header">
+
+                    <div>
+
+                        <h3>
+
+                            Property Sales Overview
+
+                        </h3>
+
+                        <p>
+
+                            Monthly Sales Performance
+
+                        </p>
+
+                    </div>
+
+                    <a href="404.html">
+
+                        View Report
+
+                    </a>
+
+                </div>
+
+                <canvas id="salesChart"></canvas>
+
+            </div>
+
+            <!--==============================
+            RECENT PROPERTIES
+            ===============================-->
+
+            <div class="dashboard-box">
+
+                <div class="box-header">
+
+                    <h3>
+
+                        Recent Properties
+
+                    </h3>
+
+                    <a href="404.html">
+
+                        View All
+
+                    </a>
+
+                </div>
+
+                <div class="property-list">
+
+                    <div class="property-item">
+
+                        <img src="images/modern-villa.webp" alt="">
+
+                        <div>
+
+                            <h4>
+
+                                Luxury Beach Villa
+
+                            </h4>
+
+                            <span>
+
+                                Hyderabad
+
+                            </span>
+
+                        </div>
+
+                        <strong>
+
+                            ₹2.5 Cr
+
+                        </strong>
+
+                    </div>
+
+                    <div class="property-item">
+
+                        <img src="images/pent-house.webp" alt="">
+
+                        <div>
+
+                            <h4>
+
+                                Premium Penthouse
+
+                            </h4>
+
+                            <span>
+
+                                Bangalore
+
+                            </span>
+
+                        </div>
+
+                        <strong>
+
+                            ₹3.1 Cr
+
+                        </strong>
+
+                    </div>
+
+                    <div class="property-item">
+
+                        <img src="images/luxury-house.webp" alt="">
+
+                        <div>
+
+                            <h4>
+
+                                Smart Apartment
+
+                            </h4>
+
+                            <span>
+
+                                Chennai
+
+                            </span>
+
+                        </div>
+
+                        <strong>
+
+                            ₹98 Lakh
+
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--==============================
+            UPCOMING VISITS
+            ===============================-->
+
+            <div class="dashboard-box">
+
+                <div class="box-header">
+
+                    <h3>
+
+                        Upcoming Site Visits
+
+                    </h3>
+
+                </div>
+
+                <ul class="visit-list">
+
+                    <li>
+
+                        <strong>
+
+                            10:00 AM
+
+                        </strong>
+
+                        Luxury Villa Visit
+
+                    </li>
+
+                    <li>
+
+                        <strong>
+
+                            01:30 PM
+
+                        </strong>
+
+                        Apartment Inspection
+
+                    </li>
+
+                    <li>
+
+                        <strong>
+
+                            04:00 PM
+
+                        </strong>
+
+                        Client Meeting
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!--==============================
+            TOP AGENTS
+            ===============================-->
+
+            <div class="dashboard-box">
+
+                <div class="box-header">
+
+                    <h3>
+
+                        Top Agents
+
+                    </h3>
+
+                </div>
+
+                <div class="agent-list">
+
+                    <div class="agent-item">
+
+                        <img src="images/client4.webp" alt="">
+
+                        <div>
+
+                            <h4>
+
+                                Sophia Williams
+
+                            </h4>
+
+                            <span>
+
+                                28 Sales
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="agent-item">
+
+                        <img src="images/client6.webp" alt="">
+
+                        <div>
+
+                            <h4>
+
+                                James Carter
+
+                            </h4>
+
+                            <span>
+
+                                22 Sales
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="agent-item">
+
+                        <img src="images/client5.webp" alt="">
+
+                        <div>
+
+                            <h4>
+
+                                Olivia Brown
+
+                            </h4>
+
+                            <span>
+
+                                18 Sales
+
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--==============================
+            RECENT ACTIVITY
+            ===============================-->
+
+            <div class="dashboard-box full-width">
+
+                <div class="box-header">
+
+                    <h3>
+
+                        Recent Activity
+
+                    </h3>
+
+                    <a href="404.html">
+
+                        View All
+
+                    </a>
+
+                </div>
+
+                <table class="activity-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Client</th>
+
+                            <th>Property</th>
+
+                            <th>Status</th>
+
+                            <th>Price</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>Rahul Sharma</td>
+
+                            <td>Luxury Villa</td>
+
+                            <td><span class="status sold">Sold</span></td>
+
+                            <td>₹2.5 Cr</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Anjali Rao</td>
+
+                            <td>Premium Apartment</td>
+
+                            <td><span class="status pending">Pending</span></td>
+
+                            <td>₹95 Lakh</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>Vikram Singh</td>
+
+                            <td>Beach House</td>
+
+                            <td><span class="status active">Active</span></td>
+
+                            <td>₹1.8 Cr</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

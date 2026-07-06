@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stackly | Create Account</title>
+
+    <link rel="stylesheet" href="css/login.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!--==================================
+    REGISTER
+    ===================================-->
+
+    <section class="login-section">
+
+        <div class="login-container">
+
+            <!--=========================
+            LOGO
+            =========================-->
+
+            <a href="index.html" class="login-logo">
+
+                <img src="images/stackly-logo5.webp" alt="Stackly Logo">
+
+            </a>
+
+            <!--=========================
+            HEADER
+            =========================-->
+
+            <div class="login-header">
+
+                <span class="login-tag">
+
+                    CREATE ACCOUNT
+
+                </span>
+
+                <h1>
+
+                    Join Stackly
+
+                </h1>
+
+                <p>
+
+                    Create your account and choose your dashboard.
+
+                </p>
+
+            </div>
+
+            <!--=========================
+            ROLE SELECTOR
+            =========================-->
+
+            <div class="role-selector">
+
+                <div class="role-card active"
+                    data-role="admin">
+
+                    <i class="fa-solid fa-user-shield"></i>
+
+                    <h3>Admin</h3>
+
+                    <span>Operations Console</span>
+
+                </div>
+
+                <div class="role-card"
+                    data-role="client">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    <h3>Client</h3>
+
+                    <span>Projects Dashboard</span>
+
+                </div>
+
+            </div>
+
+            <!--=========================
+            FORM
+            =========================-->
+
+            <form id="registerForm" novalidate>
+
+                <!-- Full Name -->
+
+                <div class="input-group">
+
+                    <label>Full Name</label>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-user"></i>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            placeholder="Your full name">
+
+                    </div>
+
+                    <small id="nameError" class="error-text"></small>
+
+                </div>
+
+                <!-- Email -->
+
+                <div class="input-group">
+
+                    <label>Email Address</label>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="you@example.com">
+
+                    </div>
+
+                    <small id="emailError" class="error-text"></small>
+
+                </div>
+
+                <!-- Phone -->
+
+                <div class="input-group">
+
+                    <label>Phone Number</label>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-phone"></i>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            maxlength="10"
+                            placeholder="Enter phone number">
+
+                    </div>
+
+                    <small id="phoneError" class="error-text"></small>
+
+                </div>
+
+                <!-- Password -->
+
+                <div class="input-group">
+
+                    <label>Password</label>
+
+                    <div class="input-box password-box">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="At least 8 characters">
+
+                        <span class="toggle-password"
+                            id="togglePassword">
+
+                            <i class="fa-solid fa-eye-slash"></i>
+
+                        </span>
+
+                    </div>
+
+                    <small id="passwordError" class="error-text"></small>
+
+                </div>
+
+                <!-- Confirm Password -->
+
+                <div class="input-group">
+
+                    <label>Confirm Password</label>
+
+                    <div class="input-box password-box">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="Confirm password">
+
+                        <span class="toggle-password"
+                            id="toggleConfirmPassword">
+
+                            <i class="fa-solid fa-eye-slash"></i>
+
+                        </span>
+
+                    </div>
+
+                    <small id="confirmPasswordError"
+                        class="error-text"></small>
+
+                </div>
+
+                <!-- Terms -->
+
+                <div class="login-options">
+
+                    <label class="remember-me">
+
+                        <input
+                            type="checkbox"
+                            id="terms">
+
+                        I agree to the Terms & Conditions
+
+                    </label>
+
+                </div>
+
+                <!-- Button -->
+
+                <button
+                    type="submit"
+                    class="login-btn"
+                    id="registerBtn">
+
+                    <i class="fa-solid fa-user-plus"></i>
+
+                    Create Account
+
+                </button>
+
+            </form>
+
+            <!--=========================
+            LOGIN LINK
+            =========================-->
+
+            <div class="register-text">
+
+                Already have an account?
+
+                <a href="login.html">
+
+                    Sign In
+
+                </a>
+
+            </div>
+
+            <!--=========================
+            BACK
+            =========================-->
+
+            <a href="index.html"
+                class="back-home">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+                Go Back
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <script src="js/register.js"></script>
+
+</body>
+
+</html>
