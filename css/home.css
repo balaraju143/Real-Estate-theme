@@ -6,7 +6,7 @@ HERO SECTION
 
     position:relative;
 
-    min-height:100vh;
+    min-height:125vh;
 
     display:flex;
 
@@ -1387,7 +1387,7 @@ CONTENT CARD
 
     position:relative;
 
-    padding:45px;
+    padding:50px;
 
     border-radius:34px;
 
@@ -1408,6 +1408,17 @@ CONTENT CARD
     box-shadow:
 
     0 30px 70px rgba(0,0,0,.25);
+    margin-left:-35px;
+
+
+}
+@media(max-width:768px){
+
+    .estate-content{
+
+        margin-left:0 !important;
+
+    }
 
 }
 
@@ -2246,6 +2257,12 @@ TIMELINE
 
 }
 
+
+
+/*==================================
+ACHIEVEMENT CARD HOVER
+==================================*/
+
 /*==================================
 BUTTON
 ==================================*/
@@ -2325,13 +2342,13 @@ BOTTOM STATS
 
     border:1px solid rgba(255,255,255,.08);
 
-    transition:.45s;
+     transition:transform .4s ease;
 
 }
 
 .achievement-card:hover{
 
-    transform:translateY(-10px);
+    transform:translateY(-15px) !important;
 
     background:rgba(34,209,255,.08);
 
@@ -2352,6 +2369,13 @@ BOTTOM STATS
     color:#d6e3ef;
 
 }
+
+
+
+/*==================================
+EXTRA CARD HOVER EFFECT
+==================================*/
+
 
 /*==================================
 PARTNER LOGOS
@@ -3902,15 +3926,31 @@ BOTTOM COUNTERS
 /*==================================
 BUTTON
 ==================================*/
-
 .amenity-button{
 
-    margin-top:-200px;
+    display:flex;
 
-    text-align:center;
+    justify-content:center;
+
+    align-items:center;
+
+    margin-top:40px;
+
+    width:100%;
+    margin-left:500px;
 
 }
+@media(max-width:768px){
 
+    .amenity-button{
+
+        margin-left:0;
+
+        justify-content:center;
+
+    }
+
+}
 .amenity-button a{
 
     display:inline-flex;
@@ -5839,7 +5879,7 @@ RESPONSIVE
 
         position:absolute;
 
-        width:85px;
+        width:120px;
 
         padding:10px;
 
@@ -5885,29 +5925,29 @@ RESPONSIVE
 
 .london{
 
-    top:25px;
+    top:5px;
     left:120px;
 
 }
 
 .newyork{
 
-    top:120px;
+    top:100px;
     left:5px;
 
 }
 
 .dubai{
 
-    top:120px;
+    top:100px;
     right:5px;
 
 }
 
 .paris{
 
-    top:245px;
-    left:120px;
+    top:345px;
+    left:40px;
 
 }
 
@@ -6620,9 +6660,25 @@ RESPONSIVE
         height:58px;
 
     }
+    
+}
+.achievement-card{
+
+    min-height:90px !important;
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:18px 12px !important;
+     width:90%;
+
+    margin:0 auto;
 
 }
-
 @media(max-width:480px){
 
     .testimonial-card{
@@ -6742,4 +6798,103 @@ TRUSTED BRANDS
 
     }
 
+}
+
+
+/*==================================
+HOME PAGE - REDUCE CARD TEXT SIZE
+==================================*/
+
+/* Card Headings */
+.feature-card h3,
+.amenity-card h4,
+.journey-card h3,
+.life-card h2,
+.achievement-card h2,
+.testimonial-card h4,
+.estate-content h3,
+.floating-card h4,
+.location-info h4{
+
+    font-size:90% !important;
+
+}
+
+/* Card Paragraphs */
+.feature-card p,
+.amenity-card p,
+.journey-card p,
+.testimonial-text,
+.estate-content p,
+.floating-card p,
+.location-info span,
+.location-info small,
+.life-card span,
+.achievement-card span{
+
+    font-size:90% !important;
+
+}
+
+/* Estate Features */
+.estate-features span{
+
+    font-size:14px !important;
+
+}
+
+/* Estate Price */
+.estate-bottom h4{
+
+    font-size:22px !important;
+
+}
+@media(max-width:768px){
+
+    .copyright{
+
+        text-align:center;
+
+        line-height:1.6;
+
+        font-size:15px;
+
+    }
+
+    .copyright strong{
+
+        white-space:nowrap;
+
+    }
+.footer-bottom{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+}
+
+.footer-bottom p{
+
+    width:100%;
+
+    text-align:center;
+
+    line-height:1.6;
+
+    margin:0;
+
+}
+
+.footer-bottom p strong{
+
+    display:block;
+
+}
 }
